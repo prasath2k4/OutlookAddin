@@ -49,18 +49,15 @@ namespace OutlookAddIn5
             {
                 ribbonCollection.Ribbon1.checkBox1.Checked = true;
                 ribbonCollection.Ribbon1.checkBox1.Enabled = false;
-                ribbonCollection.Ribbon1.checkBox1.Visible = true;
-                mailItem.Save();
+                ribbonCollection.Ribbon1.checkBox1.Visible = true;              
             }
             else
             {
                 //   Globals.Ribbons.Ribbon1.checkBox1.Visible = false;
                 ribbonCollection.Ribbon1.checkBox1.Checked = false;
                 ribbonCollection.Ribbon1.checkBox1.Enabled = true;
-                ribbonCollection.Ribbon1.checkBox1.Visible = false;
-                mailItem.Save();
-            }
-            GC.SuppressFinalize(this);
+                ribbonCollection.Ribbon1.checkBox1.Visible = false;                
+            }            
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
